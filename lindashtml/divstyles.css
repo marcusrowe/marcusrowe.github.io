@@ -1,0 +1,600 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Inter, sans-serif;
+    background-color: #f5f5f5;
+    padding: 0px;
+}
+
+
+/* Position the overlay text on the background image */
+.background-image-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.background-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-text h1 {
+    font-size: 14rem;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+    text-shadow: 
+        2px 2px 0px #F580B4, 
+       -2px 2px 0px #F580B4, 
+        2px -2px 0px #F580B4, 
+       -2px -2px 0px #F580B4;
+}
+
+.overlay-text h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+.info-box {
+    width: 100%;               
+    background-color: #FFDC72;   
+    padding: 20px;              
+    box-sizing: border-box;     
+    text-align: center;         
+    font-size: 1.5rem;          
+    margin: 0;                  
+    min-height: 1100px;
+}
+
+
+/* Basic styling for navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    background-color: #F580B4;
+    width: 100%;          
+    top: 0;              
+    left: 0;              
+    box-sizing: border-box;
+}
+
+
+/* Navbar links container */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+    flex-grow: 0.25; 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Style for navigation links */
+.navbar-links li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Hover Effect for Navigation Items */
+.navbar a:hover {
+    text-decoration: underline;
+    color: #FFDC72;
+}
+
+/* Left-aligned logo */
+.navbar-logo {
+    margin-right: 20px;
+}
+
+
+/* Yellow Info Box */
+.info-box {
+    width: 100%;
+    background-color: #FFDC72;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Image container for flex layout */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    margin: 20px 0;
+}
+
+/* Each image box handles text positioning above the image */
+.image-box {
+    width: 50%; 
+    text-align: center;
+}
+
+/* Ensures images are the exact same size with cropping */
+.fixed-size-image {
+    width: 100%;              
+    height: 400px;           
+    object-fit: cover;        
+    border-radius: 25px;       
+}
+
+/* Text styling above image */
+.image-text {
+    margin-top: 60px;
+    margin-bottom: 8px;       
+    color: #5B6BCA;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Content section with extra spacing */
+.content {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Styles for Upcoming Events header */
+.content h2 {
+    font-size: 4rem;
+    color: #F580B4;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    font-size: 4rem;
+    border-bottom: 10px solid #F580B4; 
+    padding-bottom: 10px; 
+        display: inline-block; 
+
+}
+
+
+/* Styles for the paragraph */
+.content p {
+    text-align: left;
+    max-width: 1300px; 
+    margin: 0 auto;   
+    line-height: 1.6; 
+    padding: 0 10px;  
+}
+
+/* Pink Info Box */
+.pink-info-box {
+    width: 100%;
+    background-color: #F580B4;  
+    box-sizing: border-box;
+    display: flex;              
+    flex-direction: column;    
+    justify-content: center;    
+    align-items: center;        
+    text-align: center;        
+    min-height: 400px;        
+    margin-bottom: 0;           
+}
+
+/* Styles for the heading text */
+.pink-info-box h2 {
+    font-size: 4rem;
+    margin-bottom: 70px;
+    color: #FFDC72;  
+    z-index: 10;     
+    position: relative; 
+}
+
+/* Styles for the subheading text */
+.pink-info-box h3 {
+    font-size: 1.75rem;
+    margin-top: 0;
+    color: #FFDC72;  
+    border-bottom: 10px solid #FFDC72; 
+    padding-bottom: 10px; 
+    display: inline-block; 
+    z-index: 10;    
+    position: relative; 
+}
+
+/* Styles for the image */
+.pink-info-box img {
+    position: absolute;        
+    left: 20px;               
+    max-width: 500px;      
+    height: auto;             
+    z-index: 1;               
+}
+
+
+/* Black Info Box Footer */
+.footer {
+    width: 100%;
+    min-height: 150px;
+    background-color: black;   
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    padding: 20px 0;            
+    box-sizing: border-box;
+}
+
+
+/* Left Section Image */
+.left img {
+    left: 90px;                 
+    max-width: 100px;           
+    height: auto;               
+    z-index: 1;                 
+}
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex;                      /* Flexbox for child elements */
+    justify-content: space-between;     /* Distributes space evenly between the left, center, and right */
+    width: 100%;                         /* Stretches footer content to the full width */
+    max-width: 1200px;                   /* Optional max width */
+}
+
+/* Left Section */
+.left {
+    text-align: left;                   /* Left-aligns the text */
+    margin-left: 20px;                  /* Adds margin to the left */
+    color: white;                       /* Makes the text white */
+    flex-basis: 33%;                    /* Makes the left section take up 33% of the space */
+}
+
+
+/* Right Section */
+.right {
+    text-align: right;                  /* Right-aligns the text */
+    margin-right: 20px;                 /* Adds margin to the right */
+    color: white;                       /* Makes the text white */
+    flex-basis: 33%;                    /* Makes the right section take up 33% of the space */
+}
+
+/* Center Section */
+.center {
+    text-align: center;                 /* Centers the content in this section */
+    color: white;                       /* Makes the text white */
+    flex-grow: 1;                       /* Allows the center section to take up the remaining space */
+    margin-bottom: 5px;
+    display: flex;                      /* Enables flexbox for column layout */
+    flex-direction: column;             /* Stacks items vertically */
+    align-items: center;                /* Centers items horizontally */
+}
+
+/* Styling for 'CONNECT WITH US' heading */
+.center h3 {
+    margin-bottom: 10px;                /* Adds space between heading and image */
+    color: white;                       /* Makes the text white */
+}
+
+/* Styling for the social media image */
+.socials-img {
+    max-width: 150px;                   /* Limits the width of the image */
+    height: auto;                       /* Maintains aspect ratio */
+    margin-top: 10px;                   /* Adds space between heading and image */
+}
+
+
+/* Apply the background image only to the menu-page class */
+body.menu-page {
+    margin: 0;
+    padding: 0;
+    background-image: url('menupic.jpg');
+    background-position: center;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-attachment: scroll; /* Scrolls with the page */
+    height: 100%; /* Ensure the body covers the full height */
+    color: black; /* Make text white to stand out on the dark background */
+}
+
+.menu-background {
+    position: relative;
+    min-height: 100vh; /* Ensure it takes up the entire viewport height */
+}
+
+/* Menu Section */
+.menuheaders {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.menu-categories h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Section styling */
+.Appetizers, .maindishes, .soupsandsalads, .drinks, .desserts {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.menuheaders {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-size: 48px; /* Adjust this value as needed */
+}
+
+
+.menu-categories {
+    color: white;
+    display: flex;
+    justify-content: center; /* Aligns items in the center */
+    gap: 50px; /* Adds a small space between the h3 elements */
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+
+/* Optional: remove margin from h3 tags */
+.menu-categories h3 {
+    margin: 0;
+}
+
+
+
+/* Center the yellow text boxes */
+.Appetizers,
+.maindishes,
+.soupsandsalads,
+.drinks,
+.desserts {
+    background-color: #FFDC72;       /* Yellow background */
+    padding: 20px;                   /* Padding around the text */
+    border-radius: 8px;              /* Rounded corners for the box */
+    margin: 0 auto 20px auto;        /* Center the box with margins */
+    text-align: left;                /* Left-aligns text inside */
+    max-width: 70%;                  /* Set a maximum width for better centering */
+    width: 70%;                     /* Width of the box */
+    box-sizing: border-box;          /* Ensures padding is included in the width */
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+/* Center-align headers within centered boxes if needed */
+.menu-centered h3,
+.menu-centered h4,
+.menu-centered h5 {
+    text-align: center;              /* Center-align section headers */
+
+}
+
+
+
+
+
+
+/* Container for the about us section to align the image and text side by side */
+.aboutus-container {
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    margin-left: 20px; /* Adjust this to move the text and image off the side */
+}
+
+/* Styling for the image */
+.aboutus-img img {
+    border-radius: 25px; /* Rounded edges for the image */
+    width: 600px; /* Adjust width if needed */
+    margin-right: 50px; /* Space between the image and the text */
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+/* Styling for the text */
+.aboutus-text h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+    margin-top: 120px;
+    border-bottom: 10px solid black; /* Adds a pink rule (line) under the heading */
+    padding-bottom: 5px; /* Adds some space between the heading and the line */
+        display: inline-block; /* Makes the border only as wide as the text */
+}
+
+.aboutus-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-top: 10px;
+
+}
+
+/* Container for the images (dan, annie, oglinda) */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers images horizontally */
+    gap: 20px; /* Adds space between the images */
+    margin-top: 20px; /* Adds space above the images */
+}
+
+/* Styling for the images */
+.image-item {
+    position: relative; /* Position the text relative to this container */
+}
+
+.image-item img {
+    width: 150px;  /* Set the width for all images */
+    height: 150px; /* Set the height to match the width for square images */
+    object-fit: cover; /* Ensures images maintain their aspect ratio without distortion */
+    border-radius: 15px; /* Rounded edges for the images */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Text that appears on hover */
+.image-item .hover-text {
+    position: absolute;
+    top: 50%; /* Centers the text vertically */
+    left: 50%; /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Adjusts positioning to truly center */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px 10px; /* Adds padding to the text */
+    border-radius: 5px; /* Optional rounded corners for the text box */
+    opacity: 0; /* Initially hides the text */
+    pointer-events: none; /* Prevents the text from blocking the image */
+}
+
+/* Show text when hovering over the specific image */
+.image-item:hover .hover-text {
+    opacity: 1; /* Makes the text visible */
+}
+
+.special {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* Calendar container */
+.calendar-container {
+    display: flex;
+    justify-content: left;
+    margin-left: 60px;
+    align-items: flex-start;
+    padding: 50px;
+    min-height: 60vh;
+}
+
+.calendar {
+    margin-top: 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 900px; /* Max width */
+    height: auto;
+    border: 10px solid black; /* Thin black border around the calendar */
+}
+
+/* Status Section styles (right of the calendar) */
+.status-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%; /* Ensures even spacing */
+    align-items: flex-start;
+    margin-top: 50px;
+    padding-left: 50px; /* Space between status section and calendar */
+}
+
+/* Status item layout: flex for horizontal alignment */
+.status-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Red square styles */
+.red-square, .green-square, .orange-square, .purple-square {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Rounded edges for the images */
+}
+
+/* Status labels */
+h3 {
+    font-size: 16px;
+    color: black;
+    display: inline-block;
+}
+
+/* Specific square colors */
+.green-square {
+    background-color: #A0F79A;
+}
+
+.orange-square {
+    background-color: #FFDC72;
+}
+
+.purple-square {
+    background-color: #5B6BCA;
+}
+
+.red-square {
+    background-color: #FF5D5D;
+}
+/* Center the entire location container */
+.location-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align text to the top of the image */
+    margin-top: 50px; /* Optional: Adjust margin to center vertically */
+    text-align: center;
+}
+
+/* Map image with rounded corners */
+.map-image {
+    border-radius: 15px; /* Rounded edges */
+    max-width: 700px;
+    max-height: 700px;
+    margin: 50px 0; /* Center spacing around the image */
+}
+
+/* Text container next to the image */
+.location-text {
+    margin-left: 20px; /* Space between image and text */
+    margin-top: 0;
+    text-align: left; /* Aligns text within location-text div */
+}
+
+/* Styling for LOCATION and HOURS headings */
+.location-text h1 {
+    font-size: 72px;
+    border-bottom: 10px solid black;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+/* Styling for the other text */
+.location-text p {
+    font-size: 18px;
+    margin: 5px 0;
+    margin-top: 20px;
+}
+
+
+
+/* Style for the links */
+.menu-categories a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Default color for links */
+    font-size: 1em; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for the links */
+.menu-categories a:hover {
+    color: #FFDC72; /* Change color to yellow on hover */
+}

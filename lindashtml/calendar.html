@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linda's</title>
+    <link rel="stylesheet" href="divstyles.css">
+
+    <!-- FullCalendar Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <img src="logo.jpg" class="navbar-logo" width="150" alt="Description of image">
+    
+    <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="hoursandlocation.html">Hours & Location</a></li>
+    </ul>
+</div>
+
+
+
+<!-- Calendar Section -->
+<div class="calendar-container">
+    <div class="calendar">
+        <h1>Calendar</h1>
+        <!-- Calendar will be rendered here -->
+        <div id="calendar"></div>
+    </div>
+
+    <!-- Status Section (right of the calendar) -->
+    <div class="status-section">
+        <!-- Today -->
+        <div class="status-item today">
+            <div class="purple-square"></div>
+            <h3>TODAY</h3>
+        </div>
+        
+        <br>
+
+        <!-- Open -->
+        <div class="status-item open">
+            <div class="green-square"></div>
+            <h3>OPEN</h3>
+        </div>
+
+        <br>
+
+        <!-- Partially Booked -->
+        <div class="status-item partial">
+            <div class="orange-square"></div>
+            <h3>PARTIALLY BOOKED</h3>
+        </div>
+
+        <br>
+
+        <!-- Fully Booked -->
+        <div class="status-item fully-booked">
+            <div class="red-square"></div>
+            <h3>FULLY BOOKED</h3>
+        </div>
+
+        <br>
+
+        <!-- Closed -->
+        <div class="status-item closed">
+            <div class="red-square"></div>
+            <h3>CLOSED</h3>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+
+<!-- Black Info Box Footer -->
+<div class="footer">
+    <div class="footer-content">
+        <div class="left">
+            <p>514 W Atlantic Ave, Brooklyn, NY</p>
+            <p>(713)-452-1892</p>
+            <img src="footerpic.jpg" alt="Footer image">
+        </div>
+
+        <div class="center">
+            <h3>CONNECT WITH US</h3>
+            <img src="socials.jpg" alt="Socials" class="socials-img">
+        </div>
+
+        <div class="right">
+            <p>Mon-Thu 7:00am-11:00pm</p>
+            <p>Fri-Sat 7:00am-1:00am</p>
+            <p>Sun 7:00am-7:00pm</p>
+        </div>
+    </div>
+</div>
+
+<!-- FullCalendar Script -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Initialize FullCalendar
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            events: [
+                {
+                    title  : 'Event1',
+                    start  : '2024-11-20'
+                },
+                {
+                    title  : 'Event2',
+                    start  : '2024-11-25',
+                    end    : '2024-11-27'
+                }
+            ]
+        });
+    });
+</script>
+
+</body>
+</html>
