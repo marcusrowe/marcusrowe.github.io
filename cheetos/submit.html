@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheeto Collection</title>
+    <link rel="stylesheet" href="divstyles.css">
+</head>
+<body class="submit-page">
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <ul class="navbar-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="submit.html">SUBMIT A PIC</a></li>
+    </ul>
+</div>
+
+
+
+<!-- Centered Personal Information Form Section -->
+<div class="form-container">
+    <div class="drop">
+    <h2 class="form-title">SUBMIT A PIC!</h2>
+    </div>
+    <form action="#" method="post" class="info-form">
+        <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email"  placeholder="Enter your email" required>
+        </div>
+
+          <div class="form-group">
+            <label for="email">Short Bio:</label>
+            <input type="email"  placeholder="Enter short bio" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Number of cheetos eaten:</label>
+            <input type="email"  placeholder="Enter a rough estimate" required>
+        </div>
+
+          <div class="form-group">
+            <label for="email">How many Cheetos do you think it takes to build a respectable igloo?:</label>
+            <input type="email"  placeholder="There are multiple right answers" required>
+        </div>
+
+           <div class="form-group">
+            <label for="email">What’s the etiquette for licking Cheeto dust off someone else’s fingers?:</label>
+            <input type="email"  placeholder="There is one right answer" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="image-upload">Upload an Image:</label>
+            <input type="file" id="image-upload" name="image-upload" accept="image/*">
+        </div>
+<style>
+    .question {
+      margin-bottom: 20px;
+    }
+    .rating {
+      display: flex;
+      gap: 10px;
+      justify-content: start;
+      align-items: center;
+    }
+    .circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .circle:hover {
+      background-color: #ff6600;
+      color: #fff;
+    }
+    .circle.selected {
+      background-color: #ff6600;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="survey">
+    <div class="question">
+      <p>On a scale of 1-5 rate your experience while viewing our Cheeto Gallery?</p>
+    </div>
+    <div class="rating">
+      <div class="circle" data-value="1">1</div>
+      <div class="circle" data-value="2">2</div>
+      <div class="circle" data-value="3">3</div>
+      <div class="circle" data-value="4">4</div>
+      <div class="circle" data-value="5">5</div>
+    </div>
+  </div>
+
+        <div class="submit">
+        <button type="submit">SUBMIT</button>
+        <a href="thanks.html">
+    </div>
+    </form>
+</div>
+
+  <script>
+    const circles = document.querySelectorAll('.circle');
+    circles.forEach(circle => {
+      circle.addEventListener('click', () => {
+        // Remove 'selected' class from all circles
+        circles.forEach(c => c.classList.remove('selected'));
+        // Add 'selected' class to the clicked circle
+        circle.classList.add('selected');
+      });
+    });
+  </script>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Oddly Shaped Cheetos Collection. All rights reserved.</p>
+        <p>Crafted with care to celebrate creativity and curiosity.</p>
+    </div>
+</footer>
+
+</body>
+</html>
