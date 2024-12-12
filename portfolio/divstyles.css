@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace; sans-serif; /* Retains simplicity and professionalism */
+    background-color: ghostwhite; /* Neutral background for a museum-like feel */
+    color: #333; /* Dark gray text for readability */
+}
+
+.gradient-text {
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+    background: linear-gradient(90deg, #f67e9c, #3e1da2);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+.imagescale {
+    width: 600px; /* Set the initial width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.25s ease-in-out; /* Smooth scaling */
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.imagescale:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+}
+
+
+.gallerytext {
+    margin-left: 80px;
+    color: white;
+    font-size: 100px;
+}
+
+
+.image-container {
+    text-align: center; /* Center the text below the image */
+}
+
+
+.image-caption {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; /* Add space between the image and the text */
+    font-size: 20px;
+    padding: 5px 10px; /* Add space inside the box around the text */
+      border-radius: 5px;
+
+}
